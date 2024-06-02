@@ -16,7 +16,7 @@ function Header() {
                         edge="start"
                         color="inherit"
                         aria-label="menu"
-                        sx={{ mr: 2, display: 'none' }} // Hide the IconButton for now
+                        sx={{ mr: 2, display: 'none' }}
                     >
                         {/*  
                         <MenuIcon />
