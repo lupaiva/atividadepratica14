@@ -85,8 +85,8 @@ const ListarTarefa = () => {
     <>
     <Card>
         <CardHeader
-          title="Tarefas"
-          subheader="Listagem de Tarefas"
+          title="Tasks"
+          subheader="Todas as tasks"
         /> 
         <CardContent>
             <TableContainer component={Paper}>
