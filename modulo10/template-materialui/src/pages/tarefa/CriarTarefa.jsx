@@ -37,21 +37,24 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
     //Para inspecionarmos nosso código, uma boa estratégia é utilizarmos o console.log.
     //  Com o console.log, podemos visualizar o seu conteúdo na aba Console, no inspecionador de elementos, na janela do navegador
     console.log(`id: ${idTarefa} \n titulo: ${tituloTarefa} \n descrição: ${descricaoTarefa} \n inicio: ${inicioTarefa} \n fim: ${fimTarefa} \n recurso: ${recursoTarefa} \n status: ${statusTarefa}`);
-
-    setTarefas(
-      [...tarefas, 
-        {
-          idTarefa,
-          tituloTarefa,
-          descricaoTarefa,
-          inicioTarefa,
-          fimTarefa,
-          recursoTarefa,
-          statusTarefa
-        }
-      ]);
-    //console.log(`Tarefas: ` + JSON.stringify(tarefas));
-    handleClose();
+    if (tituloTarefa != '' || descricaoTarefa != '') {
+      setTarefas(
+        [...tarefas, 
+          {
+            idTarefa,
+            tituloTarefa,
+            descricaoTarefa,
+            inicioTarefa,
+            fimTarefa,
+            recursoTarefa,
+            statusTarefa
+          }
+        ]);
+      //console.log(`Tarefas: ` + JSON.stringify(tarefas));
+      handleClose();
+    } else {
+      alert('Os campos de Título e Descrição da tarefa são Obrigatórios!')
+    }
   };
 
   return(
