@@ -163,7 +163,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '60%',
-  bgcolor: 'background.paper',
+  bgcolor: 'yellow',
   p: 4,
 };
 
