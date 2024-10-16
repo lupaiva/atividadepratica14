@@ -67,14 +67,14 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
         }}>
           <Grid item xs={12}>
             <FormControl fullWidth>
-              <Input id="atividade_10" aria-describedby="atividade_10_helper_text" value={tituloTarefa} onChange={e => { setTituloTarefa(e.target.value) }} />
-              <FormHelperText id="atividade_10_helper_text">Título da Tarefa.</FormHelperText>
+              <Input id="tarefa_titulo" aria-describedby="tarefa_titulo_helper_text" value={tituloTarefa} onChange={e => { setTituloTarefa(e.target.value) }} />
+              <FormHelperText id="tarefa_titulo_helper_text">Título da Tarefa.</FormHelperText>
             </FormControl>
           </Grid>
           <Grid item xs={12}>  
             <FormControl fullWidth>
-              <Input id="atividade_pratica" aria-describedby="atividade_pratica_helper_text" value={descricaoTarefa} onChange={e => { setDescricaoTarefa(e.target.value) }} />
-              <FormHelperText id="atividade_pratica_helper_text">Descrição da Tarefa.</FormHelperText>
+              <Input id="tarefa_descricao" aria-describedby="tarefa_descricao_helper_text" value={descricaoTarefa} onChange={e => { setDescricaoTarefa(e.target.value) }} />
+              <FormHelperText id="tarefa_descricao_helper_text">Descrição da Tarefa.</FormHelperText>
             </FormControl>
           </Grid>
           <Grid container spacing={2} mt={1}>
@@ -82,9 +82,9 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
               <FormControl>
                 <Input id="tarefa_inicio" type="date" aria-describedby="tarefa_inicio_helper_text" value={inicioTarefa} onChange={e => { setInicioTarefa(e.target.value) }}
                   sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
+                    color:'rgba(3, 166, 36, 0)',
                     fontWeight: 400,
-                    paddingLeft:'13px'
+                    paddingLeft:'16px'
                   }} 
                 />
                 <FormHelperText id="tarefa_inicio_helper_text">Início da Tarefa.</FormHelperText>
@@ -94,9 +94,9 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
               <FormControl>
                 <Input id="tarefa_fim" type="date" aria-describedby="tarefa_fim_helper_text" value={fimTarefa} onChange={e => { setFimTarefa(e.target.value) }}
                   sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
+                    color:'rgba(3, 166, 36, 1)',
                     fontWeight: 400,
-                    paddingLeft:'13px'
+                    paddingLeft:'16px'
                   }} 
                 />
                 <FormHelperText id="tarefa_fim_helper_text">Fim da Tarefa.</FormHelperText>
@@ -112,8 +112,8 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
                   onChange={handleRecurso}
                   size="small"
                   sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
-                    fontWeight: 400,
+                    color:'rgba(3, 166, 36, 0.6)',
+                    fontWeight: 450,
                   }} 
                 >
                   <MenuItem value={'Recurso 1'}>Recurso 1</MenuItem>
@@ -132,7 +132,7 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
                   onChange={handleStatus}
                   size="small"
                   sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
+                    color:'rgba(3, 166, 36, 0.6)',
                     fontWeight: 400,
                   }} 
                 >
@@ -163,7 +163,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '60%',
-  bgcolor: 'background.paper',
+  bgcolor: 'black',
   p: 4,
 };
 
