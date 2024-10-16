@@ -67,14 +67,14 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
         }}>
           <Grid item xs={12}>
             <FormControl fullWidth>
-              <Input id="tarefa_titulo" aria-describedby="tarefa_titulo_helper_text" value={tituloTarefa} onChange={e => { setTituloTarefa(e.target.value) }} />
-              <FormHelperText id="tarefa_titulo_helper_text">Título da Tarefa.</FormHelperText>
+              <Input id="atividade_10" aria-describedby="atividade_10_helper_text" value={tituloTarefa} onChange={e => { setTituloTarefa(e.target.value) }} />
+              <FormHelperText id="atividade_10_helper_text">Título da Tarefa.</FormHelperText>
             </FormControl>
           </Grid>
           <Grid item xs={12}>  
             <FormControl fullWidth>
-              <Input id="tarefa_descricao" aria-describedby="tarefa_descricao_helper_text" value={descricaoTarefa} onChange={e => { setDescricaoTarefa(e.target.value) }} />
-              <FormHelperText id="tarefa_descricao_helper_text">Descrição da Tarefa.</FormHelperText>
+              <Input id="atividade_pratica" aria-describedby="atividade_pratica_helper_text" value={descricaoTarefa} onChange={e => { setDescricaoTarefa(e.target.value) }} />
+              <FormHelperText id="atividade_pratica_helper_text">Descrição da Tarefa.</FormHelperText>
             </FormControl>
           </Grid>
           <Grid container spacing={2} mt={1}>
