@@ -24,7 +24,7 @@ function Header() {
               */}
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Gerenciamento de Projetos
+              Atividade Prática - Gerenciador de Tarefas 
             </Typography>
           </Toolbar>
         </AppBar>
