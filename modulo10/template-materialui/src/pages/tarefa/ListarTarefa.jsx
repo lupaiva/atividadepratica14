@@ -84,13 +84,12 @@ const ListarTarefa = () => {
     return(
     <>
     <Card>
-        <CardHeader
+        <CardHeader align="center" 
           title="Tarefas"
-          subheader="Listagem de Tarefas"
         /> 
         <CardContent>
             <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+            <Table sx={{ minWidth: 650 }} size="medium" aria-label="a dense table">
                 <TableHead>
                 <TableRow>
                     <TableCell>#</TableCell>
