@@ -157,10 +157,27 @@ const EditarTarefa = ({handleCloseEditar, idTarefaSelecionada, tarefas, tarefa, 
             </Grid>
             <Grid container spacing={2} pl={2} mt={2}>
               <Grid item xs={1}>
-                <Button size="small" variant="contained" onClick={handleEditar}>Salvar</Button>
+                <Button 
+                size="small" 
+                variant="contained" 
+                onClick={handleEditar}
+                sx={{ bgcolor: '#61C445', '&:hover': { bgcolor: '#55AF3B' } }}
+                >Salvar</Button>
               </Grid>  
               <Grid item xs={1}>  
-                <Button size="small" variant="outlined" onClick={handleCloseEditar}>Cancelar</Button>  
+                <Button 
+                size="small" 
+                variant="outlined" 
+                onClick={handleCloseEditar}
+                sx={{ 
+                  color: '#61C445', 
+                  borderColor: '#61C445', 
+                  '&:hover': { 
+                    backgroundColor: 'rgba(97, 196, 69, 0.1)', 
+                    borderColor: '#55AF3B',
+                  }
+                }}
+                >Cancelar</Button>  
               </Grid>
             </Grid>  
           </Grid>
